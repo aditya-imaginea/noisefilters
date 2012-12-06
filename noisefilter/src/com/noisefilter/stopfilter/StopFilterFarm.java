@@ -37,8 +37,8 @@ public class StopFilterFarm {
 
 	public void dump() {
 		for (Character c : farm.keySet()) {
-			System.out.println("parent : " + c);
-			farm.get(c).getFarmNode().dumpValue();
+			System.out.println("parent : " + c +" max depth: "+farm.get(c).getMaxLength() );
+			//farm.get(c).getFarmNode().dumpValue();
 		}
 	}
 }

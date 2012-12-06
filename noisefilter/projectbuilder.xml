@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="noisefilter.makejar" default="makejar" basedir=".">
+  <target name ="makejar" description="Create a jar for the noisefilter project">
+    <jar jarfile="noisefilter.jar" includes="*.class" basedir="bin"/>
+  </target>
+</project>

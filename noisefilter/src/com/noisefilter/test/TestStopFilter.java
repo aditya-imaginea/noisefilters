@@ -25,7 +25,15 @@ public class TestStopFilter {
 
 	@Test
 	public void test() {
-		Assert.assertTrue(filterfarm.searchTree("the"));
+		Scanner sc = new Scanner(
+				Driver.class.getResourceAsStream("inputstream.txt"));
+		while (sc.hasNext()) {
+			String s = sc.next();
+			
+			Assert.assertTrue(filterfarm.searchTree(s));
+			System.out.println(s);
+		}
+		sc.close();		
 	}
 
 }
